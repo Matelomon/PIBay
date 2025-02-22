@@ -1,10 +1,93 @@
-/* PiBay - Einheitliches Design für alle Seiten */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-body { background-color: #f8f8f8; }
-header { background: #232f3e; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 24px; font-weight: bold; }
-nav ul { list-style: none; display: flex; gap: 15px; }
-nav a { color: white; text-decoration: none; padding: 8px 12px; background: #ff9900; border-radius: 5px; }
-.content { text-align: center; padding: 40px; }
-.button { background: #ff9900; color: white; padding: 10px; text-decoration: none; border-radius: 5px; }
-footer { text-align: center; padding: 20px; background: #232f3e; color: white; margin-top: 20px; }
+/* PiBay - Einheitliches & Responsives Design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #232f3e;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #ff9900;
+    border-radius: 5px;
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin-top: 10px;
+    }
+}
+
+.button {
+    background: #ff9900;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #232f3e;
+    color: white;
+    margin-top: 20px;
+}
