@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PiBay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PiBay</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="search.html">Produkte suchen</a></li>
+                <li><a href="list-product.html">Verkaufen</a></li>
+                <li><a href="orders.html">Meine Bestellungen</a></li>
+                <li><a href="profile.html">Mein Konto</a></li>
+            </ul>
+        </nav>
+        <div class="cart"><a href="#">🛒 Warenkorb</a></div>
+    </header>
+
+    <main>
+        <section class="content">
+            
+        <h2>Login</h2>
+        <form action="process_login.php" method="POST">
+            <label>Benutzername:</label>
+            <input type="text" name="username" required>
+            <label>Passwort:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Einloggen</button>
+        </form>
+    
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PiBay - Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

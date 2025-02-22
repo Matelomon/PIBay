@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt einstellen - PiBay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PiBay</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="search.html">Produkte suchen</a></li>
+                <li><a href="list-product.html">Verkaufen</a></li>
+                <li><a href="orders.html">Meine Bestellungen</a></li>
+                <li><a href="profile.html">Mein Konto</a></li>
+            </ul>
+        </nav>
+        <div class="cart"><a href="#">🛒 Warenkorb</a></div>
+    </header>
+
+    <main>
+        <section class="content">
+            
+        <h2>Produkt hinzufügen</h2>
+        <form action="product-listing.html" method="POST" enctype="multipart/form-data">
+            <label>Produktname:</label>
+            <input type="text" name="product_name" required>
+            <label>Beschreibung:</label>
+            <textarea name="description" required></textarea>
+            <label>Preis in Pi:</label>
+            <input type="number" name="price" step="0.01" required>
+            <label>Produktbild:</label>
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Produkt einstellen</button>
+        </form>
+    
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PiBay - Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
